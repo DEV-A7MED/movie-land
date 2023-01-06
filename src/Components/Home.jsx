@@ -4,12 +4,14 @@ import SearchIcon from '../Search.svg';
 import MovieCard from './MovieCard';
 const Home = () => {
   
-    const API_URL = "http://www.omdbapi.com?apikey=21d1aa42";
+    const API_URL = "https://www.omdbapi.com?apikey=21d1aa42";
+
   const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
 
   const searchMovies = async (title) => {
     const {data} = await axios.get(`${API_URL}&s=${title}`);
+    console.log(data);
     setMovies(data.Search);
   };
   useEffect(() => {
