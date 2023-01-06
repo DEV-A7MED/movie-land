@@ -1,6 +1,6 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
-import SearchIcon from '../Search.svg'
+import React, { useEffect, useState } from 'react';
+import SearchIcon from '../Search.svg';
 import MovieCard from './MovieCard';
 const Home = () => {
   
